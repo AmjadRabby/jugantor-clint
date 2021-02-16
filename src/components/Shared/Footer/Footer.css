@@ -1,0 +1,7 @@
+.footer-item {
+  cursor: pointer;
+}
+.footer-item:hover {
+  color: rgb(81, 81, 255);
+  transition: all 0.5 ease-in-out;
+}

@@ -1,0 +1,29 @@
+.head-news-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.507);
+  overflow: hidden;
+  font-size: 1.75rem;
+}
+.head-card {
+  cursor: pointer;
+}
+.head-card:hover {
+  background: lightgray;
+  color: yellow !important;
+}
+
+.news-box {
+  width: 100%;
+}
+
+.news-box-content {
+  height: 20rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.box-btn {
+  width: 10rem;
+  border: none;
+}
