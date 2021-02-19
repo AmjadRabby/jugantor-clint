@@ -9,6 +9,20 @@ import news7 from "../images/news/news-7.jpg";
 import news8 from "../images/news/news-8.jpg";
 import news9 from "../images/news/news-9.jpg";
 
+
+//all news items
+
+
+import newsA1 from "../images/news/news-a-1.jpg";
+import newsA2 from "../images/news/news-a-2.jpg";
+import newsA3 from "../images/news/news-a-3.jpg";
+import newsA4 from "../images/news/news-a-4.jpg";
+import newsA5 from "../images/news/news-a-5.jpg";
+import newsA6 from "../images/news/news-a-6.jpg";
+import newsA7 from "../images/news/news-a-7.jpg";
+import newsA8 from "../images/news/news-a-8.jpg";
+import newsA9 from "../images/news/news-a-9.jpg";
+
 export const HeadNewsData = [
   {
     id: 1,
@@ -72,5 +86,129 @@ export const RecantNews = [
     title: "বিএনপি সারা দেশে বিএনপির বিক্ষোভ সমাবেশ বুধবার",
     img: news9,
     description: "",
+  },
+];
+
+
+export const allNewsData = [
+  {
+    title: "জাতীয়",
+    news: [
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA1,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি ",
+        images: newsA2,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA3,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA4,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA5,
+        description: "",
+      },
+    ],
+  },
+  {
+    title: "রাজনীতি",
+    news: [
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA6,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি ",
+        images: newsA2,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA3,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA4,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA5,
+        description: "",
+      },
+    ],
+  },
+  {
+    title: "আন্তর্জাতিক",
+    news: [
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA7,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি ",
+        images: newsA2,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA3,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA4,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA5,
+        description: "",
+      },
+    ],
+  },
+  {
+    title: "সারাদেশ",
+    news: [
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA8,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি ",
+        images: newsA2,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA3,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA4,
+        description: "",
+      },
+      {
+        newsTitle: "সরকারি প্রণোদনা পেয়েছেন করোনায় ক্ষতিগ্রস্ত ৪ লাখ খামারি",
+        images: newsA5,
+        description: "",
+      },
+    ],
   },
 ];

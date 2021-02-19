@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuItem } from "./MenuItem";
-// import MenuItem from "./MenuItem";
 
 const DropdownItems = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  // console.log(MenuItem);
   return (
     <>
-      <ul onClick={handleClick} className={click ? " " : "row list-unstyled"}>
+      <ul
+        onClick={handleClick}
+        className={
+          click
+            ? " dropdown-menu-bar clicked"
+            : " dropdown-menu-bar bg-light rounded-bottom shadow row"
+        }
+      >
         {MenuItem.map((item, index) => {
           return (
-            <li className="col-2 col-md-2 col-sm-6 mb-2" key={index}>
+            <li className="col-2 col-md-2 col-sm-6" key={index}>
               <Link
                 to={item.path}
                 className={item.cName}

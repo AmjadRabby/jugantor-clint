@@ -11,7 +11,7 @@ import {
 // import Dropdown from "./Dropdown";
 // import Button from "./Button";
 import { Container } from "react-bootstrap";
-import logo from "../../../../images/jugantor-logo.svg";
+import logo from "../../../../images/amr-somy.png";
 import DropdownItems from "./DropdownItems";
 
 const Navbar = () => {
@@ -46,10 +46,16 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", handleNavScroll);
   return (
-    <Container className="p-0 bg-light border-bottom border-dark">
-      <nav className={navScroll ? "navbar  p-0 scroll-nav" : "navbar  p-0"}>
+    <Container className="nav-container p-0 bg-light sticky-top">
+      <nav
+        className={
+          navScroll
+            ? "navbar shadow p-1"
+            : "navbar border-bottom  border-dark p-1"
+        }
+      >
         <Link to="/" className="navbar-logo">
-          <img src={logo} alt="" className="" />
+          <img src={logo} alt="" className="img-fluid main-logo" />
         </Link>
         <ul className={click ? "nav-menu  m-0 p-0 " : "nav-menu m-0 p-0 "}>
           <li className="nav-item">
@@ -135,7 +141,7 @@ const Navbar = () => {
               className="nav-links nav-links-mobile"
               onClick={closeMobileMenu}
             >
-              লাইফ স্টাইল আরও
+              লাইফ স্টাইল
             </Link>
           </li>
         </ul>
@@ -151,12 +157,9 @@ const Navbar = () => {
           )}
           <span className="ml-1 nav-links">আরও</span>
         </div>
-        <FaSearch className="search-icon mr-2" />
+        <FaSearch className="search-icon mr-3" />
       </nav>
-      <div>
-        {click && <DropdownItems />}
-        
-      </div>
+      <div>{click && <DropdownItems />}</div>
     </Container>
   );
 };

@@ -6,10 +6,10 @@ const NewsBox = () => {
   const [news, setNews] = useState(RecantNews);
   return (
     <div className="news-box">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
+      <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li className="nav-item" role="presentation">
           <button
-            class="nav-link box-btn mr-2  active"
+            className="btn nav-link box-btn mr-2  active"
             id="pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#pills-home"
@@ -21,9 +21,9 @@ const NewsBox = () => {
             সর্বশেষ
           </button>
         </li>
-        <li class="nav-item d-flex justify-content-end" role="presentation">
+        <li className="nav-item d-flex justify-content-end" role="presentation">
           <button
-            class="nav-link box-btn"
+            className="btn nav-link box-btn"
             id="pills-profile-tab"
             data-bs-toggle="pill"
             data-bs-target="#pills-profile"
@@ -36,28 +36,27 @@ const NewsBox = () => {
           </button>
         </li>
       </ul>
-      <div class="tab-content news-box-content" id="pills-tabContent">
+      <div className="tab-content news-box-content" id="pills-tabContent">
         <div
-          class="tab-pane fade show active"
+          className="tab-pane fade show active"
           id="pills-home"
           role="tabpanel"
           aria-labelledby="pills-home-tab"
         >
           {news.map((news, index) => (
-            <Link className="text-decoration-none text-dark">
-              <div class="card border-0 mb-3 h-25">
-                <div class="row g-0">
-                  <div class="col-md-4 p-0">
+            <Link to="" key={index} className="text-decoration-none text-dark">
+              <div className="card border-0 mb-3 h-25">
+                <div className="row g-0">
+                  <div className="col-md-4 p-1">
                     <img
                       src={news.img}
-                      class="img-fluid rounded p-1"
-                      s
+                      className="img-fluid rounded p-1"
                       alt="..."
                     />
                   </div>
-                  <div class="col-md-8">
-                    <div class="card-body p-0">
-                      <h6 class="card-title font-size-small font-weight-bold">
+                  <div className="col-md-8">
+                    <div className="card-body p-0">
+                      <h6 className="card-title font-size-small font-weight-bold">
                         {news.title}
                       </h6>
                     </div>
@@ -68,7 +67,7 @@ const NewsBox = () => {
           ))}
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="pills-profile"
           role="tabpanel"
           aria-labelledby="pills-profile-tab"
