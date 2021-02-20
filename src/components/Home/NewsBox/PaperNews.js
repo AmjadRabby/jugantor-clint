@@ -1,6 +1,6 @@
 import React from "react";
-import ELogo from "../../../../../images/e-paper.png";
-import EPaper from "../../../../../images/news/jugantor-paper.jpg";
+import ELogo from "../../../images/e-paper.png";
+import EPaper from "../../../images/news/jugantor-paper.jpg";
 
 const PaperNews = () => {
   return (

@@ -1,40 +1,50 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-import { HeadNewsData, RecantNews } from "../../../DataNews/DataNews";
-import NewsBox from "./Navbar/NewsBox/NewsBox";
-import PaperNews from "./Navbar/NewsBox/PaperNews";
+import {
+  HeadNewsData,
+  allNewsData,
+  RecantNews,
+} from "../../../DataNews/DataNews";
+import NewsBox from "../NewsBox/NewsBox";
+import PaperNews from "../NewsBox/PaperNews";
 
 const HeadNews = () => {
-  const [headNews, setHeadNews] = useState(HeadNewsData);
-  const [news, setNews] = useState(RecantNews);
-  const [item] = headNews;
-  const { title, img } = item;
+  const [allNews, setAllNews] = useState(allNewsData);
+  const topNews = allNews[0];
+  const headNews = allNews.slice(0, 9)
+  // console.log(headNews);
   return (
     <Container className="mt-4">
       <div className="row">
         <div className="col-8 col-md-8 col-sm-12 p-0">
-          <div className="card head-card m-1 mr-3 position-relative">
-            <img src={img} className="card-img-top " alt="..." />
-            <div className="card-body head-news-title">
-              <p className="card-text font-weight-bold text-white">{title}</p>
+          <Link className="" to={"/" + topNews.key}>
+            <div className="card head-card position-relative">
+              <img src={topNews.images} className="card-img-top " alt="..." />
+              <div className="card-body head-news-title">
+                <p className="card-text font-weight-bold text-white">
+                  {topNews.newsTitle}
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="row mt-5 mb-4 pr-3">
-            {news.map((news, index) => (
+          <div className="row mt-4 mb-4 p-2">
+            {headNews.map((newsItem, index) => (
               <div key={index} className="col-4 p-1">
-                <Link to="" className="text-decoration-none text-dark">
+                <Link
+                  to={"/" + newsItem.key}
+                  className="text-decoration-none text-dark"
+                >
                   <div className="card border-0 mb-3">
                     <img
-                      src={news.img}
+                      src={newsItem.images}
                       className="card-img-top rounded p-1"
                       alt=""
                     />
                     <div className="card-body p-1">
                       <h6 className="card-text font-size-small font-weight-bold ">
-                        {news.title}
+                        {newsItem.newsTitle}
                       </h6>
                     </div>
                   </div>

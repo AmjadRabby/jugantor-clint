@@ -46,6 +46,7 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", handleNavScroll);
   return (
+  
     <Container className="nav-container p-0 bg-light sticky-top">
       <nav
         className={

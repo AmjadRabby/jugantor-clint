@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RecantNews } from "../../../../../DataNews/DataNews";
+import { allNewsData, RecantNews } from "../../../DataNews/DataNews";
 
 const NewsBox = () => {
-  const [news, setNews] = useState(RecantNews);
+  const [allNews, setAllNews] = useState(allNewsData);
+  //  const [item] = headNews;
+  //  const [data] = item.news;
+  //  console.log(data.newsTitle);
   return (
     <div className="news-box">
       <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -43,13 +46,13 @@ const NewsBox = () => {
           role="tabpanel"
           aria-labelledby="pills-home-tab"
         >
-          {news.map((news, index) => (
+          {allNews.map((news, index) => (
             <Link to="" key={index} className="text-decoration-none text-dark">
               <div className="card border-0 mb-3 h-25">
                 <div className="row g-0">
                   <div className="col-md-4 p-1">
                     <img
-                      src={news.img}
+                      src={news.images}
                       className="img-fluid rounded p-1"
                       alt="..."
                     />
@@ -57,7 +60,7 @@ const NewsBox = () => {
                   <div className="col-md-8">
                     <div className="card-body p-0">
                       <h6 className="card-title font-size-small font-weight-bold">
-                        {news.title}
+                        {news.newsTitle}
                       </h6>
                     </div>
                   </div>
