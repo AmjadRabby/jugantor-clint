@@ -1,0 +1,11 @@
+.scroll-top {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+}
+.scroll-icon {
+  font-size: 1.7rem;
+}
