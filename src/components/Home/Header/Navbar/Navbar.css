@@ -13,11 +13,12 @@
 }
 
 .main-logo {
-  width: 14rem;
+  width: 15rem;
   cursor: pointer;
 }
 
 .nav-menu {
+  width: 65%;
   display: grid;
   grid-template-columns: repeat(15, auto);
   /* grid-gap: 10px; */

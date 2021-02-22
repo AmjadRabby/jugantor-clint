@@ -13,7 +13,7 @@ const DropdownItems = () => {
         className={
           click
             ? " dropdown-menu-bar clicked"
-            : " dropdown-menu-bar bg-light rounded-bottom shadow row"
+            : " dropdown-menu-bar bg-light pt-3 pb-3 rounded-bottom shadow row"
         }
       >
         {MenuItem.map((item, index) => {

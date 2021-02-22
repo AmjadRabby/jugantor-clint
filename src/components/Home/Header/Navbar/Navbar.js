@@ -16,26 +16,14 @@ import DropdownItems from "./DropdownItems";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
   const [navScroll, setNavScroll] = useState(false);
+  const [navHide, setNavHide] = useState(true);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    setNavHide(!navHide);
+  };
   const closeMobileMenu = () => setClick(false);
-
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
 
   const handleNavScroll = () => {
     if (window.scrollY >= 80) {
@@ -46,7 +34,6 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", handleNavScroll);
   return (
-  
     <Container className="nav-container p-0 bg-light sticky-top">
       <nav
         className={
@@ -58,93 +45,101 @@ const Navbar = () => {
         <Link to="/" className="navbar-logo">
           <img src={logo} alt="" className="img-fluid main-logo" />
         </Link>
-        <ul className={click ? "nav-menu  m-0 p-0 " : "nav-menu m-0 p-0 "}>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              কোভিড-১৯
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/services"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              জাতীয়
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              রাজনীতি
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/products"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              অর্থনীতি
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/sign-up"
-              className="nav-links nav-links"
-              onClick={closeMobileMenu}
-            >
-              আন্তর্জাতিক
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/sign-up"
-              className="nav-links nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              সারাদেশ
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/sign-up"
-              className="nav-links nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              খেলা
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/sign-up"
-              className="nav-links nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              মার্কিন নির্বাচন
-            </Link>
-          </li>
-          <li className=" nav-item">
-            <Link
-              to="/sign-up"
-              className="nav-links nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              শিক্ষাঙ্গন
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/sign-up"
-              className="nav-links nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              লাইফ স্টাইল
-            </Link>
-          </li>
+        <ul className="nav-menu m-0 p-0 ">
+          {navHide && (
+            <>
+              <li className="nav-item">
+                <Link
+                  to="/covid-19"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  কোভিড-১৯
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/national"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  জাতীয়
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/politics"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  রাজনীতি
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/economics"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  অর্থনীতি
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/international"
+                  className="nav-links nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  আন্তর্জাতিক
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/country-news"
+                  className="nav-links nav-links-mobile"
+                  onClick={closeMobileMenu}
+                >
+                  সারাদেশ
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/sports"
+                  className="nav-links nav-links-mobile"
+                  onClick={closeMobileMenu}
+                >
+                  খেলা
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/us-election"
+                  className="nav-links nav-links-mobile"
+                  onClick={closeMobileMenu}
+                >
+                  মার্কিন নির্বাচন
+                </Link>
+              </li>
+              <li className=" nav-item">
+                <Link
+                  to="/campus"
+                  className="nav-links nav-links-mobile"
+                  onClick={closeMobileMenu}
+                >
+                  শিক্ষাঙ্গন
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/life-style"
+                  className="nav-links nav-links-mobile"
+                  onClick={closeMobileMenu}
+                >
+                  লাইফ স্টাইল
+                </Link>
+              </li>
+            </>
+          )}
         </ul>
 
         <div

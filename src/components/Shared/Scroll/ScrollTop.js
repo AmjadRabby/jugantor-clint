@@ -6,14 +6,14 @@ const ScrollTop = () => {
   const [scroll, setScroll] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 250) {
+    if (window.scrollY >= 200) {
       setScroll(true);
     } else {
       setScroll(false);
     }
   };
   window.addEventListener("scroll", handleScroll);
-  console.log(scroll);
+  // console.log(scroll);
 
   const scrollToTop = () => {
     window.scrollTo({

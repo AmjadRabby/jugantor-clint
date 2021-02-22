@@ -1,8 +1,26 @@
-.social-icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  /* border-radius: 30px; */
-  background: white;
-  font-size: 1.3rem;
-  margin: 0 0 0 10px;
+.social-media {
+  width: 1.9rem;
+  height: 1.9rem;
+  background: lightgray;
+  border-radius: 50px;
+  font-size: 1.2rem ;
+  margin-right: 0.4rem;
+}
+.facebook-icon {
+  background-color: #4267b2;
+}
+.messenger-icon {
+  background-color: #448aff;
+}
+.twitter-icon {
+  background-color: #55acee;
+}
+.pinterest-icon {
+  background-color: #cb2027;
+}
+.linkedin-icon {
+  background-color: #0077b5;
+}
+.print-icon {
+  background-color: #222222;
 }

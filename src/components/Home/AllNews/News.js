@@ -15,7 +15,7 @@ const News = ({ news }) => {
           {title}
         </h5>
         <Link
-          to={"/" + newsPart[0].key}
+          to={"/news/" + newsPart[0].key}
           //   key={index}
           className="text-decoration-none text-dark"
         >

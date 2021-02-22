@@ -47,7 +47,7 @@ const NewsBox = () => {
           aria-labelledby="pills-home-tab"
         >
           {allNews.map((news, index) => (
-            <Link to="" key={index} className="text-decoration-none text-dark">
+            <Link to={"/news/"+ news.key} key={index} className="text-decoration-none text-dark">
               <div className="card border-0 mb-3 h-25">
                 <div className="row g-0">
                   <div className="col-md-4 p-1">
