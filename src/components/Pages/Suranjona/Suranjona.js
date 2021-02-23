@@ -1,11 +1,24 @@
-import React from 'react';
+import React from "react";
+import { Container } from "react-bootstrap";
+import NewsContainer from "../NewsContainer/NewsContainer";
 
 const Suranjona = () => {
-    return (
-      <div>
-        <h2 className="m-auto">Suranjona Coming Soon......</h2>
-      </div>
-    );
+  return (
+    <Container className="p-0 mt-4 mb-2">
+      <ul className="nav border-bottom pb-2 mb-3">
+        <li className="nav-item ">
+          {" "}
+          <h5 className="nav-link text-primary font-weight-bolder p-1 mb-0 mr-4">
+            সুরঞ্জনা
+          </h5>
+        </li>
+       
+      </ul>
+      <section className="">
+        <NewsContainer />
+      </section>
+    </Container>
+  );
 };
 
 export default Suranjona;

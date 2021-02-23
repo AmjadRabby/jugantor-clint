@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./components/Home/Home/Home";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NewsDetails from "./components/Pages/NewsDetails/NewsDetails";
 import Nav from "./components/Home/Header/Navbar/Nav";
 import Navbar from "./components/Home/Header/Navbar/Navbar";
@@ -35,10 +35,19 @@ import Bicchu from "./components/Pages/Bicchu/Bicchu";
 import Interview from "./components/Pages/Interview/Interview";
 import Suranjona from "./components/Pages/Suranjona/Suranjona";
 import CorporateNews from "./components/Pages/CorporateNews/CorporateNews";
+import { createContext, useState } from "react";
+import NoMatch from "./components/NoMatch/NoMatch";
+import { allNewsData } from "./DataNews/DataNews";
+
+export const NewsContext = createContext()
 
 function App() {
+  const [newsData, setNewsData] = useState(allNewsData)
   return (
-    <div className="">
+    <NewsContext.Provider value={[newsData, setNewsData]}>
+      {
+        console.log(newsData)
+      }
       <Router>
         <Nav />
         <Navbar />
@@ -137,10 +146,14 @@ function App() {
           <Route path="/corporate-news">
             <CorporateNews />
           </Route>
+
+          <Route path="*">
+            <NoMatch />
+          </Route>
         </Switch>
         <Footer />
       </Router>
-    </div>
+    </NewsContext.Provider>
   );
 }
 

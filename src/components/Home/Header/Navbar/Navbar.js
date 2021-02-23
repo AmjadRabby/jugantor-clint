@@ -1,15 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
-import {
-  FaTimes,
-  FaBars,
-  FaCaretDown,
-  FaReact,
-  FaSearch,
-} from "react-icons/fa";
-// import Dropdown from "./Dropdown";
-// import Button from "./Button";
+import { FaTimes, FaBars, FaSearch } from "react-icons/fa";
 import { Container } from "react-bootstrap";
 import logo from "../../../../images/amr-somy.png";
 import DropdownItems from "./DropdownItems";
@@ -155,7 +147,9 @@ const Navbar = () => {
         </div>
         <FaSearch className="search-icon mr-3" />
       </nav>
-      <div>{click && <DropdownItems />}</div>
+      <div className="container">
+        {click && <DropdownItems setClick={setClick} setNavHide={setNavHide} />}
+      </div>
     </Container>
   );
 };

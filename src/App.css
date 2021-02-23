@@ -1,3 +1,10 @@
 .font-size-small {
   font-size: 0.9rem;
 }
+.brand-hover:hover {
+  /* outline: 0; */
+  opacity: 0.9;
+}
+.brand-hover:hover p{
+  color: rgb(255, 166, 0)!important;
+}

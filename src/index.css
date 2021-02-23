@@ -1,4 +1,4 @@
-@import url('https://fonts.maateen.me/adorsho-lipi/font.css');
+@import url("https://fonts.maateen.me/adorsho-lipi/font.css");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,10 @@
 body {
   margin: 0;
   font-family: "AdorshoLipi", Arial, sans-serif !important;
-  
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+html {
+  scroll-behavior: smooth;
 }

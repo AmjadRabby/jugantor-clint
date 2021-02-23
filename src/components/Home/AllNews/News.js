@@ -10,7 +10,7 @@ const News = ({ news }) => {
   console.log(newsPart);
   return (
     <div className="col-6 pl-0 mb-5">
-      <div class="card border-0">
+      <div className="card border-0">
         <h5 className="border-bottom font-weight-bold text-dark border-danger m-1 mb-2 pb-2">
           {title}
         </h5>
@@ -20,18 +20,18 @@ const News = ({ news }) => {
           className="text-decoration-none text-dark"
         >
           <img
-            class="card-img-top rounded img-fluid "
+            className="card-img-top rounded img-fluid "
             src={newsPart[0].images}
             alt="Card image cap"
           />
-          <div class="card-body p-0 mt-3 mb-2">
-            <h5 class="card-title font-weight-bold text-dark p-1">
+          <div className="card-body p-0 mt-3 mb-2">
+            <h5 className="card-title font-weight-bold text-dark p-1">
               {newsPart[0].newsTitle}
             </h5>
           </div>
         </Link>
 
-        <ul class="list-group list-group-flush">
+        <ul className="list-group list-group-flush">
           {}
           {newsPart.map((newsData, index) => (
             <Link

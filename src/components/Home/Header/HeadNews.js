@@ -16,7 +16,7 @@ const HeadNews = () => {
       <div className="row">
         <div className="col-8 col-md-8 col-sm-12 p-0">
           <Link className="" to={"/news/" + topNews.key}>
-            <div className="card head-card position-relative">
+            <div className="card brand-hover head-card position-relative">
               <img src={topNews.images} className="card-img-top " alt="..." />
               <div className="card-body head-news-title">
                 <p className="card-text font-weight-bold text-white">

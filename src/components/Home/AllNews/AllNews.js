@@ -6,7 +6,7 @@ import News from "./News";
 
 const AllNews = () => {
   const [allNews, setAllNews] = useState(allNewsData);
-    const [divNews, setdivNews] = useState(partNews);
+  const [divNews, setdivNews] = useState(partNews);
 
   return (
     <Container>

@@ -1,57 +1,49 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import "./NewsContainer.css";
 import { Container } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { allNewsData } from "../../../DataNews/DataNews";
 import NewsBox from "../../Home/NewsBox/NewsBox";
 import PaperNews from "../../Home/NewsBox/PaperNews";
 
-const NewsContainer = () => {
+const NewsContainer = ({newsItem}) => {
   const [allNews, setAllNews] = useState(allNewsData);
-  //   const matchNews = allNews.filter(news => news.)
-
-  const location = useLocation();
-  console.log(location);
-  useEffect(() => {
-    const currentPath = location.pathname;
-    console.log(currentPath);
-  }, [location]);
+  const topNews = allNews[0];
+  const headNews = allNews.slice(0, 9);
+  // console.log(headNews);
 
   return (
-    <Container className="mt-4">
+    <Container className=" mt-4">
       <div className="row">
         <div className="col-8 col-md-8 col-sm-12 p-0">
-          <Link className="" to={"/news/" + allNews[0].key}>
-            <div className="card head-card position-relative">
-              <img
-                src={allNews[0].images}
-                className="card-img-top "
-                alt="..."
-              />
+          <Link className="" to={"/news/" + topNews.key}>
+            <div className="card brand-hover head-card position-relative">
+              <img src={topNews.images} className="card-img-top " alt="..." />
               <div className="card-body head-news-title">
                 <p className="card-text font-weight-bold text-white">
-                  {allNews[0].newsTitle}
+                  {topNews.newsTitle}
                 </p>
               </div>
             </div>
           </Link>
 
           <div className="row mt-4 mb-4 p-2">
-            {allNews.map((newsItem, index) => (
+            {headNews.map((newsItem, index) => (
               <div key={index} className="col-4 p-1">
                 <Link
                   to={"/news/" + newsItem.key}
                   className="text-decoration-none text-dark"
                 >
-                  <div className="card border-0 mb-3">
+                  <div className="card brand-hover border-0 mb-3">
                     <img
                       src={newsItem.images}
                       className="card-img-top rounded p-1"
                       alt=""
                     />
                     <div className="card-body p-1">
-                      <h6 className="card-text font-size-small font-weight-bold ">
+                      <p className="card-text font-size-small font-weight-bold ">
                         {newsItem.newsTitle}
-                      </h6>
+                      </p>
                     </div>
                   </div>
                 </Link>
@@ -61,6 +53,26 @@ const NewsContainer = () => {
         </div>
 
         <div className="col-4 col-md-4 col-sm-12">
+          <Link className="" to={"/news/" + topNews.key}>
+            <div className="card brand-hover head-card position-relative mb-3">
+              <img src={topNews.images} className="card-img-top " alt="..." />
+              <div className="card-body p-2 news-container-title ">
+                <p className="card-text font-weight-bold text-white">
+                  {topNews.newsTitle}
+                </p>
+              </div>
+            </div>
+          </Link>
+          <Link className="" to={"/news/" + topNews.key}>
+            <div className="card head-card position-relative mb-3">
+              <img src={topNews.images} className="card-img-top " alt="..." />
+              <div className="card-body p-2 news-container-title ">
+                <p className="card-text font-weight-bold text-white">
+                  {topNews.newsTitle}
+                </p>
+              </div>
+            </div>
+          </Link>
           <div className="ml-3">
             <NewsBox />
           </div>

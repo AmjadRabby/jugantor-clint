@@ -31,13 +31,13 @@ const NewsDetails = () => {
             <span className="text-primary"> {newsInfo.title}</span>{" "}
             <span className="ml-2 mr-2"> >> </span> {newsInfo.newsTitle}
           </p>
-          <div class="card border-0 mt-4">
-            <div class="card-header bg-transparent p-2">
+          <div className="card border-0 mt-4">
+            <div className="card-header bg-transparent p-2">
               {" "}
-              <h4 class="card-title text-dark font-weight-bold">
+              <h4 className="card-title text-dark font-weight-bold">
                 {newsInfo.newsTitle}
               </h4>
-              <div class="text-light d-flex pt-2 pb-2">
+              <div className="text-light d-flex pt-2 pb-2">
                 <div className=" text-secondary">
                   <p className="d-flex align-items-center m-0">
                     <small className="">
@@ -86,15 +86,15 @@ const NewsDetails = () => {
                 </div>
               </div>
             </div>
-            <div class="card-body p-0">
+            <div className="card-body p-0">
               <img
                 src={newsInfo.images}
                 className="card-img-top rounded"
                 alt=""
               />
-              <p class="card-text mt-5 mb-4">{newsInfo.description}</p>
+              <p className="card-text mt-5 mb-4">{newsInfo.description}</p>
             </div>
-            <div class="card-footer border-0 bg-transparent">
+            <div className="card-footer border-0 bg-transparent">
               <div className="text-light d-flex align-items-center">
                 <div className="border-right text-dark pr-2 mr-2">
                   <span className="d-block d-flex justify-content-center font-weight-bold">
