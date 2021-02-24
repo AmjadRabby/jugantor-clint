@@ -97,7 +97,7 @@ const DoctorAvailable = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="doctor-available" />
       </section>
     </Container>
   );

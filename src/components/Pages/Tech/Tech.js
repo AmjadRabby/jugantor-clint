@@ -111,7 +111,7 @@ const Tech = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="tech" />
       </section>
     </Container>
   );

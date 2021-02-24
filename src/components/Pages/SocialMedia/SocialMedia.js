@@ -11,10 +11,10 @@ const SocialMedia = () => {
           <h5 className="nav-link text-primary font-weight-bolder p-1 mb-0 mr-4">
             সোশ্যাল মিডিয়া
           </h5>
-        </li>       
+        </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="social-media" />
       </section>
     </Container>
   );

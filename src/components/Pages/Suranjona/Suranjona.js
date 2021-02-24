@@ -12,10 +12,9 @@ const Suranjona = () => {
             সুরঞ্জনা
           </h5>
         </li>
-       
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="suranjona" />
       </section>
     </Container>
   );

@@ -11,10 +11,10 @@ const ViewersOpinion = () => {
           <h5 className="nav-link text-primary font-weight-bolder p-1 mb-0 mr-4">
             দৃষ্টিপাত
           </h5>
-        </li>        
+        </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="viewers-opinion" />
       </section>
     </Container>
   );

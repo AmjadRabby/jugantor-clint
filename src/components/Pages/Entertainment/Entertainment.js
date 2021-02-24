@@ -88,7 +88,7 @@ const Entertainment = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="entertainment" />
       </section>
     </Container>
   );

@@ -12,10 +12,10 @@ const Editorial = () => {
           <h5 className="nav-link text-primary font-weight-bolder p-1 mb-0 mr-4">
             সম্পাদকীয়
           </h5>
-        </li>        
+        </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="editorial" />
       </section>
     </Container>
   );

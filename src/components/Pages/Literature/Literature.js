@@ -96,7 +96,7 @@ const Literature = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="literature" />
       </section>
     </Container>
   );

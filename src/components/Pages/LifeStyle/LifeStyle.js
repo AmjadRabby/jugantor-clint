@@ -103,7 +103,7 @@ const LifeStyle = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="life-style" />
       </section>
     </Container>
   );

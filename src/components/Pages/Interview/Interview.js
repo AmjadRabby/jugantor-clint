@@ -13,10 +13,9 @@ const Interview = () => {
             সাক্ষাৎকার
           </h5>
         </li>
-        
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="interview" />
       </section>
     </Container>
   );

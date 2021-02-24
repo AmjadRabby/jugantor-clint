@@ -21,7 +21,7 @@
   width: 68%;
   display: grid;
   grid-template-columns: repeat(15, auto);
-  grid-gap: 4px;
+  /* grid-gap: 4px; */
   list-style: none;
   justify-content: center;
 }

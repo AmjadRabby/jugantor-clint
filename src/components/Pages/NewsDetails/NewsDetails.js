@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NewsDetails.css";
 import { Container, Row } from "react-bootstrap";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams  } from "react-router-dom";
 import { allNewsData } from "../../../DataNews/DataNews";
 import {
   FaFacebookMessenger,
@@ -19,9 +19,11 @@ import PaperNews from "../../Home/NewsBox/PaperNews";
 const NewsDetails = () => {
   const [allNews, setAllNews] = useState(allNewsData);
 
-  const { key } = useParams();
-  const newsInfo = allNews.find((pd) => pd.key == key);
-  const headNews = allNews.slice(0, 12);
+  const {id} = useParams();
+  const newsInfo = allNews.find((pd) => pd.id == id);
+  const matchKey = allNews.filter(match => match.key == newsInfo.key)
+  // const headNews = allNews.slice(0, 12);
+  console.log(matchKey);
   return (
     <Container className="mt-4 mb-5">
       <Row>
@@ -142,10 +144,10 @@ const NewsDetails = () => {
             আরও খবর
           </h6>
           <Row className="">
-            {headNews.map((newsItem, index) => (
+            {matchKey.map((newsItem, index) => (
               <div key={index} className="col-4 p-">
                 <Link
-                  to={"/" + newsItem.key}
+                  to={"/" + newsItem.id}
                   className="text-decoration-none text-dark"
                 >
                   <div className="card border-0 mb-3">

@@ -4,18 +4,18 @@ import { allNewsData } from "../../../DataNews/DataNews";
 
 const News = ({ news }) => {
   const [allNews, setAllNews] = useState(allNewsData);
-  const { title, key } = news;
+  const { titleKey } = news;
 
-  const newsPart = allNews.filter((a) => a.title === news.title);
-  console.log(newsPart);
+  const newsPart = allNews.filter((a) => a.key === news.titleKey);
+  // console.log(newsPart);
   return (
     <div className="col-6 pl-0 mb-5">
       <div className="card border-0">
         <h5 className="border-bottom font-weight-bold text-dark border-danger m-1 mb-2 pb-2">
-          {title}
+          {titleKey}
         </h5>
         <Link
-          to={"/news/" + newsPart[0].key}
+          to={"/news/" + newsPart[0].id}
           //   key={index}
           className="text-decoration-none text-dark"
         >
@@ -35,7 +35,7 @@ const News = ({ news }) => {
           {}
           {newsPart.map((newsData, index) => (
             <Link
-              to={"/" + newsData.key}
+              to={"/news/" + newsData.id}
               key={index}
               className="text-decoration-none text-dark"
             >

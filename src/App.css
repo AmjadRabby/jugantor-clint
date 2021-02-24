@@ -8,3 +8,6 @@
 .brand-hover:hover p{
   color: rgb(255, 166, 0)!important;
 }
+.cursor-pointer{
+  cursor: pointer;
+}

@@ -48,7 +48,7 @@ const NewsBox = () => {
         >
           {allNews.map((news, index) => (
             <Link
-              to={"/news/" + news.key}
+              to={"/news/" + news.id}
               key={index}
               className="text-decoration-none text-dark"
             >

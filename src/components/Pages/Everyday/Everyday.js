@@ -104,7 +104,7 @@ const Everyday = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="everyday" />
       </section>
     </Container>
   );

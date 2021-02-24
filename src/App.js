@@ -39,14 +39,14 @@ import { createContext, useState } from "react";
 import NoMatch from "./components/NoMatch/NoMatch";
 import { allNewsData } from "./DataNews/DataNews";
 
-export const NewsContext = createContext()
+export const NewsContext = createContext();
 
 function App() {
-  const [newsData, setNewsData] = useState(allNewsData)
+  const [newsData, setNewsData] = useState(allNewsData);
   return (
     <NewsContext.Provider value={[newsData, setNewsData]}>
       {
-        console.log(newsData)
+        // console.log(newsData)
       }
       <Router>
         <Nav />
@@ -56,7 +56,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/news/:key">
+          <Route path="/news/:id">
             <NewsDetails />
           </Route>
           <Route path="/covid-19">

@@ -14,7 +14,7 @@ const UsElection = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="us-election" />
       </section>
     </Container>
   );

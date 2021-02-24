@@ -88,7 +88,7 @@ const Campus = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="campus" />
       </section>
     </Container>
   );

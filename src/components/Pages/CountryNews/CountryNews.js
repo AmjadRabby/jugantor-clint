@@ -81,7 +81,7 @@ const CountryNews = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="country-news" />
       </section>
     </Container>
   );

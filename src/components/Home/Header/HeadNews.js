@@ -9,13 +9,13 @@ const HeadNews = () => {
   const [allNews, setAllNews] = useState(allNewsData);
   const topNews = allNews[0];
   const headNews = allNews.slice(0, 9);
-  // console.log(headNews);
+  console.log(topNews.id);
 
   return (
     <Container className="mt-4">
       <div className="row">
         <div className="col-8 col-md-8 col-sm-12 p-0">
-          <Link className="" to={"/news/" + topNews.key}>
+          <Link className="" to={"/news/" + topNews.id}>
             <div className="card brand-hover head-card position-relative">
               <img src={topNews.images} className="card-img-top " alt="..." />
               <div className="card-body head-news-title">
@@ -30,7 +30,7 @@ const HeadNews = () => {
             {headNews.map((newsItem, index) => (
               <div key={index} className="col-4 p-1">
                 <Link
-                  to={"/news/" + newsItem.key}
+                  to={"/news/" + newsItem.id}
                   className="text-decoration-none text-dark"
                 >
                   <div className="card border-0 mb-3">

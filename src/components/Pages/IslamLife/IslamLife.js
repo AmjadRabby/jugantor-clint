@@ -96,7 +96,7 @@ const IslamLife = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="islam-life" />
       </section>
     </Container>
   );

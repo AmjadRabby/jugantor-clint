@@ -14,7 +14,7 @@ const Covid = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="covid-19" />
       </section>
     </Container>
   );

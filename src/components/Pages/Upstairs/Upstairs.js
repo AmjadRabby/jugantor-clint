@@ -14,7 +14,7 @@ const Upstairs = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="upstairs" />
       </section>
     </Container>
   );

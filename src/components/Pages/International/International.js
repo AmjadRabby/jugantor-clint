@@ -112,7 +112,7 @@ const International = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="international" />
       </section>
     </Container>
   );

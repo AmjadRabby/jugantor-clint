@@ -104,7 +104,7 @@ const Economics = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="economics" />
       </section>
     </Container>
   );

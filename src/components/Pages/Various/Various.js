@@ -11,10 +11,10 @@ const Various = () => {
           <h5 className="nav-link text-primary font-weight-bolder p-1 mb-0 mr-4">
             চিত্র বিচিত্র
           </h5>
-        </li>        
+        </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="various" />
       </section>
     </Container>
   );

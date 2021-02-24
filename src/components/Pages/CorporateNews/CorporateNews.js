@@ -13,10 +13,9 @@ const CorporateNews = () => {
             কর্পোরেট নিউজ
           </h5>
         </li>
-        
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="corporate-news" />
       </section>
     </Container>
   );

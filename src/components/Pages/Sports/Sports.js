@@ -61,7 +61,7 @@ const Sports = () => {
             বঙ্গবন্ধু বিপিএল
           </a>
         </li>
-       
+
         <li className="nav-item">
           <a
             className="nav-link border-left p-0 px-2 text-danger font-weight-bolder font-size-small"
@@ -72,7 +72,7 @@ const Sports = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="sports" />
       </section>
     </Container>
   );

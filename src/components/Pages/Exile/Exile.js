@@ -15,7 +15,7 @@ const Exile = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="exile" />
       </section>
     </Container>
   );

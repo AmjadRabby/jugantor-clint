@@ -55,7 +55,7 @@ const Politics = () => {
         </li>
       </ul>
       <section className="">
-        <NewsContainer />
+        <NewsContainer title="politics" />
       </section>
     </Container>
   );
