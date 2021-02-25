@@ -20,7 +20,7 @@ const DropdownItems = ({ setNavHide, setClick }) => {
         className={
           clickItem
             ? " dropdown-menu-bar clicked"
-            : " dropdown-menu-bar  bg-light pt-3 pb-3 rounded-bottom shadow row"
+            : " dropdown-menu-bar border border-5  bg-light pt-3 pb-3 rounded-bottom shadow row"
         }
       >
         {MenuItem.map((item, index) => {

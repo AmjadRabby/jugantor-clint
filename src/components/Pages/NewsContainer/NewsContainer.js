@@ -18,7 +18,7 @@ const NewsContainer = ({ title }) => {
       <div className="row">
         <div className="col-8 col-md-8 col-sm-12 p-0">
           <Link className="" to={"/news/" + matchNews[0].id}>
-            <div className="card head-card position-relative">
+            <div className="card head-card-hover position-relative">
               <img
                 src={matchNews[0].images}
                 className="card-img-top "
@@ -58,31 +58,31 @@ const NewsContainer = ({ title }) => {
         </div>
 
         <div className="col-4 col-md-4 col-sm-12">
-          <Link className="" to={"/news/" + matchNews[0].id}>
-            <div className="card head-card position-relative mb-3">
+          <Link className="" to={"/news/" + matchNews[1].id}>
+            <div className="card head-card-hover position-relative mb-3">
               <img
-                src={matchNews[0].images}
+                src={matchNews[1].images}
                 className="card-img-top "
                 alt="..."
               />
               <div className="card-body p-2 news-container-title ">
-                <span className="card-text font-weight-bold text-white">
-                  {matchNews[0].newsTitle}
-                </span>
+                <p className="card-text font-weight-bold text-white">
+                  {matchNews[1].newsTitle}
+                </p>
               </div>
             </div>
           </Link>
-          <Link className="" to={"/news/" + matchNews[0].id}>
-            <div className="card head-card position-relative mb-3">
+          <Link className="" to={"/news/" + matchNews[2].id}>
+            <div className="card head-card-hover position-relative mb-3">
               <img
-                src={matchNews[0].images}
+                src={matchNews[2].images}
                 className="card-img-top "
                 alt="..."
               />
               <div className="card-body p-2 news-container-title ">
-                <span className="card-text font-weight-bold text-white">
-                  {matchNews[0].newsTitle}
-                </span>
+                <p className="card-text font-weight-bold text-white">
+                  {matchNews[2].newsTitle}
+                </p>
               </div>
             </div>
           </Link>

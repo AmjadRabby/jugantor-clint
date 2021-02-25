@@ -18,6 +18,10 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
   const handleNavScroll = () => {
+    if (window.scrollY >= 10) {
+      setClick(false);
+      setNavHide(true);
+    }
     if (window.scrollY >= 80) {
       setNavScroll(true);
     } else {
@@ -26,11 +30,11 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", handleNavScroll);
   return (
-    <Container className="nav-container p-0 bg-light sticky-top">
+    <Container className="nav-container p-0 bg-white sticky-top">
       <nav
         className={
           navScroll
-            ? "navbar shadow p-1"
+            ? "navbar shadow-sm p-1"
             : "navbar border-bottom  border-dark p-1"
         }
       >

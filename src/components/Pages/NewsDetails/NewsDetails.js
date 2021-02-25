@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NewsDetails.css";
 import { Container, Row } from "react-bootstrap";
-import { Link, useParams  } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { allNewsData } from "../../../DataNews/DataNews";
 import {
   FaFacebookMessenger,
@@ -19,9 +19,9 @@ import PaperNews from "../../Home/NewsBox/PaperNews";
 const NewsDetails = () => {
   const [allNews, setAllNews] = useState(allNewsData);
 
-  const {id} = useParams();
+  const { id } = useParams();
   const newsInfo = allNews.find((pd) => pd.id == id);
-  const matchKey = allNews.filter(match => match.key == newsInfo.key)
+  const matchKey = allNews.filter((match) => match.key == newsInfo.key);
   // const headNews = allNews.slice(0, 12);
   console.log(matchKey);
   return (
@@ -147,7 +147,7 @@ const NewsDetails = () => {
             {matchKey.map((newsItem, index) => (
               <div key={index} className="col-4 p-">
                 <Link
-                  to={"/" + newsItem.id}
+                  to={"/news/" + newsItem.id}
                   className="text-decoration-none text-dark"
                 >
                   <div className="card border-0 mb-3">

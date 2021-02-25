@@ -7,20 +7,26 @@ import PaperNews from "../NewsBox/PaperNews";
 
 const HeadNews = () => {
   const [allNews, setAllNews] = useState(allNewsData);
-  const topNews = allNews[0];
+
+  const topNews = allNews[2];
+
   const headNews = allNews.slice(0, 9);
-  console.log(topNews.id);
+  // console.log(topNews.id);
 
   return (
     <Container className="mt-4">
       <div className="row">
         <div className="col-8 col-md-8 col-sm-12 p-0">
-          <Link className="" to={"/news/" + topNews.id}>
-            <div className="card brand-hover head-card position-relative">
-              <img src={topNews.images} className="card-img-top " alt="..." />
+          <Link className="" to={"/news/" + headNews[0].id}>
+            <div className="card head-card-hover position-relative">
+              <img
+                src={headNews[0].images}
+                className="card-img-top "
+                alt="..."
+              />
               <div className="card-body head-news-title">
                 <p className="card-text font-weight-bold text-white">
-                  {topNews.newsTitle}
+                  {headNews[0].newsTitle}
                 </p>
               </div>
             </div>
@@ -36,7 +42,7 @@ const HeadNews = () => {
                   <div className="card border-0 mb-3">
                     <img
                       src={newsItem.images}
-                      className="card-img-top rounded p-1"
+                      className="card-img-top img-fluid rounded p-1"
                       alt=""
                     />
                     <div className="card-body p-1">

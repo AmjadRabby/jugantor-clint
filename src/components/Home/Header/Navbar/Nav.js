@@ -11,7 +11,7 @@ import {
 
 const Nav = () => {
   return (
-    <nav className="container nav-container p-1 bg-dark">
+    <nav className="container nav-container p-0 bg-dark">
       <ul className="nav d-flex align-items-center">
         <li className="nav-item top-nav">ঢাকা, বাংলাদেশ </li>
         <li className="nav-item top-nav ">

@@ -4,36 +4,37 @@ import { allNewsData } from "../../../DataNews/DataNews";
 
 const News = ({ news }) => {
   const [allNews, setAllNews] = useState(allNewsData);
-  const { titleKey } = news;
+  const { titleKey, title } = news;
 
-  const newsPart = allNews.filter((a) => a.key === news.titleKey);
-  // console.log(newsPart);
+  const newsFilter = allNews.filter((a) => a.key === news.titleKey);
+  const sliceNews = newsFilter.slice(0, 5);
+  console.log(news.title);
   return (
     <div className="col-6 pl-0 mb-5">
       <div className="card border-0">
         <h5 className="border-bottom font-weight-bold text-dark border-danger m-1 mb-2 pb-2">
-          {titleKey}
+          {title}
         </h5>
         <Link
-          to={"/news/" + newsPart[0].id}
+          to={"/news/" + newsFilter[0].id}
           //   key={index}
           className="text-decoration-none text-dark"
         >
           <img
             className="card-img-top rounded img-fluid "
-            src={newsPart[0].images}
+            src={newsFilter[0].images}
             alt="Card image cap"
           />
           <div className="card-body p-0 mt-3 mb-2">
             <h5 className="card-title font-weight-bold text-dark p-1">
-              {newsPart[0].newsTitle}
+              {newsFilter[0].newsTitle}
             </h5>
           </div>
         </Link>
 
         <ul className="list-group list-group-flush">
           {}
-          {newsPart.map((newsData, index) => (
+          {sliceNews.map((newsData, index) => (
             <Link
               to={"/news/" + newsData.id}
               key={index}
