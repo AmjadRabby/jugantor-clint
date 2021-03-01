@@ -7,8 +7,6 @@ import NewsBox from "../../Home/NewsBox/NewsBox";
 import PaperNews from "../../Home/NewsBox/PaperNews";
 const NewsContainer = ({ title }) => {
   const [allNews, setAllNews] = useState(allNewsData);
-
-  // const topNews = allNews[0];
   const matchNews = allNews.filter((a) => a.key === title);
   const headNews = matchNews.slice(0, 9);
   console.log(matchNews);
@@ -16,7 +14,7 @@ const NewsContainer = ({ title }) => {
   return (
     <Container className=" mt-4">
       <div className="row">
-        <div className="col-8 col-md-8 col-sm-12 p-0">
+        <div className="col-8 col-md-8 col-sm-12 p-0 sm-width-100">
           <Link className="" to={"/news/" + matchNews[0].id}>
             <div className="card head-card-hover position-relative">
               <img
@@ -57,12 +55,12 @@ const NewsContainer = ({ title }) => {
           </div>
         </div>
 
-        <div className="col-4 col-md-4 col-sm-12">
+        <div className="col-4 col-md-4 col-sm-12 sm-news-100">
           <Link className="" to={"/news/" + matchNews[1].id}>
             <div className="card head-card-hover position-relative mb-3">
               <img
                 src={matchNews[1].images}
-                className="card-img-top "
+                className="card-img-top img-fluid w-100"
                 alt="..."
               />
               <div className="card-body p-2 news-container-title ">
@@ -76,7 +74,7 @@ const NewsContainer = ({ title }) => {
             <div className="card head-card-hover position-relative mb-3">
               <img
                 src={matchNews[2].images}
-                className="card-img-top "
+                className="card-img-top img-fluid"
                 alt="..."
               />
               <div className="card-body p-2 news-container-title ">
@@ -86,10 +84,10 @@ const NewsContainer = ({ title }) => {
               </div>
             </div>
           </Link>
-          <div className="ml-3">
+          <div className="ml-3 sm-hide-element">
             <NewsBox />
           </div>
-          <div className="ml-3">
+          <div className="ml-3 sm-hide-element">
             <PaperNews />
           </div>
         </div>

@@ -27,8 +27,8 @@ const NewsDetails = () => {
   return (
     <Container className="mt-4 mb-5">
       <Row>
-        <div className="col-8 p-0 ">
-          <p className="font-weight-bold p-1 text-secondary">
+        <div className="col-8 sm-width-100 p-0 ">
+          <p className="font-weight-bold sm-details-text p-1 text-secondary">
             প্রচ্ছদ <span className="ml-2 mr-2"> >> </span>
             <span className="text-primary"> {newsInfo.title}</span>{" "}
             <span className="ml-2 mr-2"> >> </span> {newsInfo.newsTitle}
@@ -36,7 +36,7 @@ const NewsDetails = () => {
           <div className="card border-0 mt-4">
             <div className="card-header bg-transparent p-2">
               {" "}
-              <h4 className="card-title text-dark font-weight-bold">
+              <h4 className="card-title sm-details-title text-dark font-weight-bold">
                 {newsInfo.newsTitle}
               </h4>
               <div className="text-light d-flex pt-2 pb-2">
@@ -96,7 +96,7 @@ const NewsDetails = () => {
               />
               <p className="card-text mt-5 mb-4">{newsInfo.description}</p>
             </div>
-            <div className="card-footer border-0 bg-transparent">
+            <div className="card-footer mb-4 border-0 bg-transparent">
               <div className="text-light d-flex align-items-center">
                 <div className="border-right text-dark pr-2 mr-2">
                   <span className="d-block d-flex justify-content-center font-weight-bold">
@@ -129,23 +129,23 @@ const NewsDetails = () => {
             </div>
           </div>
         </div>
-        <div className="col-4 col-md-4 col-sm-12 mt-5 pt-5">
+        <div className="col-4 col-md-4 col-sm-12 sm-display-flex p-sm-0 pt-5">
           <div className="ml-3">
             <NewsBox />
           </div>
-          <div className="ml-3">
+          <div className="ml-3 sm-hide-element">
             <PaperNews />
           </div>
         </div>
       </Row>
       <Row className="">
-        <div className="col-8 p-0">
+        <div className="col-12 col-md-8 col-sm-12 p-0">
           <h6 className="border-bottom font-weight-bold text-dark border-danger mb-2 pb-2">
             আরও খবর
           </h6>
           <Row className="">
             {matchKey.map((newsItem, index) => (
-              <div key={index} className="col-4 p-">
+              <div key={index} className="col-4  p-1">
                 <Link
                   to={"/news/" + newsItem.id}
                   className="text-decoration-none text-dark"

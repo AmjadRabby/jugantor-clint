@@ -1,0 +1,11 @@
+.accordion-element {
+  display: none;
+}
+.icon-angle-up {
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+}
+.icon-angle-down {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}

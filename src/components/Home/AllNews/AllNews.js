@@ -11,7 +11,7 @@ const AllNews = () => {
   return (
     <Container>
       <Row>
-        <div className="col-8 col-md-8 col-sm-12 mt-4 p-0 pl-3">
+        <div className="col-12 col-md-8 col-sm-12 mt-4 p-0 pl-3">
           <Row>
             {divNews.map((news, index) => (
               <News key={index} news={news} />

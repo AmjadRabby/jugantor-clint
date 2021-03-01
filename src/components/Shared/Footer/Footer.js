@@ -23,19 +23,19 @@ const Footer = () => {
                 {MenuItem.map((item, index) => (
                   <li
                     key={index}
-                    className="footer-item col-3 col-md-3 col-sm-4 mb-1"
+                    className="footer-item col-6 col-md-4 col-sm-6 mb-1"
                   >
                     {item.title}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="col-4 col-md-4 col-sm-12 ">
-              <Link to="/">
+            <div className="col-4 col-md-4 col-sm-12 sm-news-100">
+              <Link className=" mr-2" to="/">
                 <img
                   src={google}
                   alt=""
-                  className="img-fluid mb-2  border rounded"
+                  className="img-fluid mb-2 border rounded"
                 />
               </Link>
               <Link to="/">

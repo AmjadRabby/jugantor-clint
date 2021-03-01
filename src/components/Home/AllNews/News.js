@@ -12,7 +12,7 @@ const News = ({ news }) => {
   return (
     <div className="col-6 pl-0 mb-5">
       <div className="card border-0">
-        <h5 className="border-bottom font-weight-bold text-dark border-danger m-1 mb-2 pb-2">
+        <h5 className="border-bottom sm-all-news-title font-weight-bold text-dark border-danger m-1 mb-2 pb-2">
           {title}
         </h5>
         <Link
@@ -26,7 +26,7 @@ const News = ({ news }) => {
             alt="Card image cap"
           />
           <div className="card-body p-0 mt-3 mb-2">
-            <h5 className="card-title font-weight-bold text-dark p-1">
+            <h5 className="card-title sm-all-news-title font-weight-bold text-dark p-1">
               {newsFilter[0].newsTitle}
             </h5>
           </div>
@@ -41,17 +41,17 @@ const News = ({ news }) => {
               className="text-decoration-none text-dark"
             >
               <div className="card border-0 mb-1 h-25">
-                <div className="row g-0">
-                  <div className="col-md-4 col-sm-5 p-0">
+                <div className="row mb-1 g-0">
+                  <div className="col-5 col-md-4 col-sm-5 p-0">
                     <img
                       src={newsData.images}
-                      className="img-fluid rounded p-1 pl-3"
+                      className="img-fluid rounded pl-3"
                       alt="..."
                     />
                   </div>
-                  <div className="col-md-8 col-sm-7 p-1">
+                  <div className="col-7 col-md-8 col-sm-7 p-1">
                     <div className="card-body p-0">
-                      <h6 className="card-title font-size-small font-weight-bold">
+                      <h6 className="card-title m-0 font-size-small font-weight-bold">
                         {newsData.newsTitle}
                       </h6>
                     </div>

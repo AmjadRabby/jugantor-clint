@@ -15,7 +15,7 @@
 }
 
 .news-box {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .news-box-content {
@@ -24,7 +24,7 @@
   overflow-x: hidden;
 }
 .box-btn {
-  width: 10rem;
+  width: 8rem;
   border: none;
 }
 @media screen and (max-width: 960px) {

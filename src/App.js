@@ -38,6 +38,7 @@ import CorporateNews from "./components/Pages/CorporateNews/CorporateNews";
 import { createContext, useState } from "react";
 import NoMatch from "./components/NoMatch/NoMatch";
 import { allNewsData } from "./DataNews/DataNews";
+import "./responsive/responsive.css";
 
 export const NewsContext = createContext();
 

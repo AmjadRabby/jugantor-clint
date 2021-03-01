@@ -7,16 +7,13 @@ import PaperNews from "../NewsBox/PaperNews";
 
 const HeadNews = () => {
   const [allNews, setAllNews] = useState(allNewsData);
-
-  const topNews = allNews[2];
-
   const headNews = allNews.slice(0, 9);
   // console.log(topNews.id);
 
   return (
     <Container className="mt-4">
       <div className="row">
-        <div className="col-8 col-md-8 col-sm-12 p-0">
+        <div className="col-8 col-md-8 col-sm-12 p-0 sm-width-100">
           <Link className="" to={"/news/" + headNews[0].id}>
             <div className="card head-card-hover position-relative">
               <img
@@ -25,7 +22,7 @@ const HeadNews = () => {
                 alt="..."
               />
               <div className="card-body head-news-title">
-                <p className="card-text font-weight-bold text-white">
+                <p className="card-text sm-head-title font-weight-bold text-white">
                   {headNews[0].newsTitle}
                 </p>
               </div>
@@ -46,7 +43,7 @@ const HeadNews = () => {
                       alt=""
                     />
                     <div className="card-body p-1">
-                      <h6 className="card-text font-size-small font-weight-bold ">
+                      <h6 className="card-text sm-news-text font-size-small font-weight-bold ">
                         {newsItem.newsTitle}
                       </h6>
                     </div>
@@ -57,11 +54,11 @@ const HeadNews = () => {
           </div>
         </div>
 
-        <div className="col-4 col-md-4 col-sm-12">
+        <div className="col-12 col-md-4 sm-display-flex p-sm-0 col-sm-12">
           <div className="ml-3">
             <NewsBox />
           </div>
-          <div className="ml-3">
+          <div className="ml-3 sm-hide-element">
             <PaperNews />
           </div>
         </div>

@@ -1,4 +1,3 @@
-// import imgHead from "../images/news/headnews.jpg";
 import imgHead from "../images/news/news-1.jpg";
 import news1 from "../images/news/news-1.jpg";
 import news2 from "../images/news/news-2.jpg";
@@ -15,9 +14,6 @@ import newsA1 from "../images/news/news-a-6.jpg";
 import newsA2 from "../images/news/news-a-6.jpg";
 import newsA3 from "../images/news/news-a-6.jpg";
 
-// import newsA1 from "../images/news/news-a-1.jpg";
-// import newsA2 from "../images/news/news-a-2.jpg";
-// import newsA3 from "../images/news/news-a-3.jpg";
 import newsA4 from "../images/news/news-a-4.jpg";
 import newsA5 from "../images/news/news-a-5.jpg";
 import newsA6 from "../images/news/news-a-6.jpg";

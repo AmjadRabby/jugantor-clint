@@ -1,0 +1,101 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   .sm-width-100 {
+    display: block;
+    min-width: 100% !important;
+  }
+  .sm-hide-element {
+    display: none !important;
+  }
+  .sm-width-100 {
+    display: block;
+    min-width: 100% !important;
+  }
+  .sm-head-text {
+    font-size: 1rem;
+  }
+  .sm-news-title {
+    font-size: 0.5rem;
+  }
+
+  .sm-display-flex {
+    min-width: 100% !important;
+  }
+
+  .sm-all-news-title {
+    font-size: 0.9rem;
+  }
+  .font-size-small {
+    font-size: 0.7rem;
+  }
+  .news-box-content {
+    /* width: 100%; */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .sm-hide-element {
+    display: none !important;
+  }
+  .accordion-element {
+    display: block !important;
+  }
+  .nav-container ul {
+    padding: 8px;
+  }
+  .sm-nav-space {
+    padding: 0 30px 0 0;
+  }
+  .main-logo {
+    width: 10rem;
+    cursor: pointer;
+  }
+  .sm-news-100 {
+    display: flex;
+    min-width: 100% !important;
+    padding: 0 !important;
+  }
+  .sm-width-100 {
+    display: block;
+    min-width: 100% !important;
+  }
+  .sm-news-box {
+    /* display: flex; */
+    width: 20rem !important;
+  }
+
+  .box-btn {
+    /* width: 9.5rem; */
+  }
+  .sm-display-flex {
+    width: 100%;
+    display: flex;
+  }
+  .sm-news-text {
+    font-size: 0.8rem;
+  }
+  .sm-news-title {
+    font-size: 0.3rem;
+  }
+  .sm-details-text {
+    font-size: 0.9rem;
+  }
+  .sm-details-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* //Large devices(laptops/desktops, 992px and up) */
+
+@media only screen and(max-width: 992px) {
+  .box-btn {
+    /* width: 100% !important;
+    border: none;
+    background: red; */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

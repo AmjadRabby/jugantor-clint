@@ -25,7 +25,7 @@ const DropdownItems = ({ setNavHide, setClick }) => {
       >
         {MenuItem.map((item, index) => {
           return (
-            <li className="col-3 col-md-2 col-sm-4" key={index}>
+            <li className="col-4 col-md-3 col-sm-6" key={index}>
               <Link
                 to={item.path}
                 className={item.cName}

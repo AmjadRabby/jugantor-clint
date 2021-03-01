@@ -18,7 +18,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
   const handleNavScroll = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 30) {
       setClick(false);
       setNavHide(true);
     }
@@ -139,7 +139,7 @@ const Navbar = () => {
         </ul>
 
         <div
-          className="menu-icon d-flex justify-content-center align-items-center"
+          className="menu-icon d-flex justify-content-center align-items-center "
           onClick={handleClick}
         >
           {click ? (
